@@ -100,5 +100,13 @@ fun FormDiri(modifier: Modifier = Modifier){
             }
         ){
             Text("Submit")
-
+        }
+        HorizontalDivider( // <-- Diperbaiki dari Divider
+            modifier = Modifier.padding(
+                bottom = dimensionResource(R.dimens.padding_medium),
+                top = dimensionResource(id = R.dimens.padding_medium)
+            ),
+            thickness = dimensionResource(R.dimens.divider_tipis), // <-- Memastikan resource ini ada di dimens.xml, atau ganti misal 1.dp jika belum didefinisikan
+            color = Color.DarkGray
+        )
 
